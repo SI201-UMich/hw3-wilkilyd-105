@@ -43,7 +43,7 @@ class CouponDispenser:
             str
         """
         # TODO: Implement per instructions
-        pass
+        
 
     def issue_coupon(self, name):
         """
