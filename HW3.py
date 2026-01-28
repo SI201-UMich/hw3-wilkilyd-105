@@ -1,12 +1,11 @@
-# Name:
-# Student ID:
-# Email:
+# Name: Lydia Wilkinson
+# Student ID: 58791224
+# Email: wilkilyd
 # Who or what you worked with on this homework (including generative AI like ChatGPT):
 # If you worked with generative AI also add a statement for how you used it.
 # e.g.:
 # Asked ChatGPT hints for debugging and suggesting the general structure of the code
-# Did your use of GenAI on this assignment align with your goals and guidelines in 
-#    your Gen AI contract? If not, why?
+# Did your use of GenAI on this assignment align with your goals and guidelines in your Gen AI contract? If not, why?
 
 import random
 import io
@@ -33,7 +32,7 @@ class CouponDispenser:
             coupon_cards (list[str]): list of possible coupons users can receive.
         """
         # TODO: Implement per instructions
-        pass
+        self.coupon_cards = coupon_cards
 
     def __str__(self):
         """
@@ -109,7 +108,7 @@ def main():
       - After exit, call tally_distribution() to print the distribution in the terminal
     """
     coupon_cards = [
-        "10% off",
+        f"10% off",
         "Free small coffee",
         "Buy 1 get 1 half off",
         "Free extra espresso shot",
