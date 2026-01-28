@@ -48,21 +48,24 @@ class CouponDispenser:
             return strings
         
     def issue_coupon(self, name):
-        """
-        Assign name with a random coupon. If name is already assigned a coupon, return it.
-        If the list coupon_cards is empty, return:
-        "The box is empty."
+        # """
+        # Assign name with a random coupon. If name is already assigned a coupon, return it.
+        # If the list coupon_cards is empty, return:
+        # "The box is empty."
 
-        Important: Do not use dictionaries in this method.
+        # Important: Do not use dictionaries in this method.
 
-        Args:
-            name (str): customer name (trimmed, non-empty)
+        # Args:
+        #     name (str): customer name (trimmed, non-empty)
 
-        Returns:
-            str: message as described above
-        """
-        # TODO: Implement per instructions
-        pass
+        # Returns:
+        #     str: message as described above
+        # """
+        self.name = name
+        if self.coupon_cards == []:
+            return "This box is empty."
+        else:
+            return f"{self.name}: {self.coupon_cards}"
 
     def distribute_session(self):
         """
