@@ -25,26 +25,28 @@ class CouponDispenser:
     """
 
     def __init__(self, coupon_cards):
-        """
-        Initialize a new CouponDispenser object.
+        # """
+        # Initialize a new CouponDispenser object.
 
-        Args:
-            coupon_cards (list[str]): list of possible coupons users can receive.
-        """
-        # TODO: Implement per instructions
+        # Args:
+        #     coupon_cards (list[str]): list of possible coupons users can receive.
+        # """
         self.coupon_cards = coupon_cards
 
     def __str__(self):
-        """
-        Return a single string with all coupons in coupon_cards joined by pipes ('|').
-        If coupon_cards is empty, return an empty string "".
+        # """
+        # Return a single string with all coupons in coupon_cards joined by pipes ('|').
+        # If coupon_cards is empty, return an empty string "".
 
-        Returns:
-            str
-        """
-        # TODO: Implement per instructions
+        # Returns:
+        #     str
+        # """
+        strings = ""
+        if self.coupon_cards != []:
+            return self.coupon_cards(list[str]) + "|"
+        else:
+            return strings
         
-
     def issue_coupon(self, name):
         """
         Assign name with a random coupon. If name is already assigned a coupon, return it.
