@@ -1,8 +1,8 @@
 # Name: Lydia Wilkinson
 # Student ID: 58791224
 # Email: wilkilyd
-# Who or what you worked with on this homework (including generative AI like ChatGPT):
-# If you worked with generative AI also add a statement for how you used it.
+# Who or what you worked with on this homework (including generative AI like ChatGPT): no one
+# If you worked with generative AI also add a statement for how you used it. I did not use AI
 # e.g.:
 # Asked ChatGPT hints for debugging and suggesting the general structure of the code
 # Did your use of GenAI on this assignment align with your goals and guidelines in your Gen AI contract? If not, why?
@@ -24,7 +24,7 @@ class CouponDispenser:
 
     """
 
-    def __init__(self, coupon_cards):
+    def __init__(self, coupon_cards, customer_roster, issued_indices):
         # """
         # Initialize a new CouponDispenser object.
 
@@ -32,6 +32,8 @@ class CouponDispenser:
         #     coupon_cards (list[str]): list of possible coupons users can receive.
         # """
         self.coupon_cards = coupon_cards
+        self.customer_roster = customer_roster
+        self.issued_indices = issued_indices
 
     def __str__(self):
         # """
@@ -65,7 +67,7 @@ class CouponDispenser:
         if self.coupon_cards == []:
             return "This box is empty."
         else:
-            return f"{self.name}: {self.coupon_cards}"
+            return f"name: {self.name}"
 
     def distribute_session(self):
         """
@@ -83,7 +85,7 @@ class CouponDispenser:
         Reminder: Use lists only (no dictionaries).
         """
         # TODO: Implement per instructions 
-        pass
+        name = input("Enter your name or 'exit' to quit")
 
     def tally_distribution(self):
         """
